@@ -4,6 +4,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ScanningText {
+// Written by: Mike Baldwin
+// Project 6 - Part 4 - Scanning Text
+// This program reads in a line of text
+// and gives as output the number of letters,
+// the number of string tokens,
+// and a table giving the frequency of each letter.
+
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     String text;
@@ -39,7 +46,8 @@ public static void main(String[] args) {
     System.out.println("The line contains " + tokenCount + " string tokens.");
     System.out.println("The frequency of letters is");
     for (LetterFreq letterFreq : letterFreqs) {
-        System.out.println(Character.toUpperCase(letterFreq.c) + " -- " + letterFreq.freq);
+        System.out.println(Character.toUpperCase(letterFreq.c) + " -- " +
+                letterFreq.freq);
     }
 }
 }
